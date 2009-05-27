@@ -12,9 +12,14 @@
     <%= f.date_select :birthday, :start_year=>1900 %>
   </p>
   <p>
+    <%= f.label :anniversary %><br />
+    <%= f.date_select :anniversary, :start_year=>1900 %>
+  </p>
+  <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
 
 <%= link_to 'Show', @person %> |
 <%= link_to 'Back', people_path %>
+
